@@ -24,8 +24,8 @@ public class DrawingComponent extends JFrame {
    
    public DrawingComponent(){
        super("Mandelbrot");
-       width = 800;
-       height = 800;
+       width = 1050;
+       height = 600;
        setBounds(100, 100, width, height);
        image = new BufferedImage(width,height, BufferedImage.TYPE_INT_RGB);
        for (int x = 0; x<width; x++){
@@ -47,7 +47,7 @@ public class DrawingComponent extends JFrame {
        double x = 0.0;
        double y = 0.0;
        int iteration = 0;
-       int maxIteration = 3000;
+       int maxIteration = 5000;
        
        while (((x*x + y*y) < (2*2)) && (iteration < maxIteration)){
            double xtemp = x*x - y*y + x0;
