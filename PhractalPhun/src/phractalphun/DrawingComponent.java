@@ -39,13 +39,13 @@ public class DrawingComponent extends JFrame {
    
    int mandelbrot(int xPixel, int yPixel){
        double pixelWidth = 3.5/width;
-       double pixelHeight = 2/height;
+       double pixelHeight = 2.0/height;
        double x0 = -2.5 + xPixel*pixelWidth;
-       double y0 = -1 + yPixel*pixelHeight;
+       double y0 = -1.0 + yPixel*pixelHeight;
        //double x0 = (xPixel - 400) / 150;
        //double y0 = (yPixel - 400) / 150;
-       double x = 0;
-       double y = 0;
+       double x = 0.0;
+       double y = 0.0;
        int iteration = 0;
        int maxIteration = 3000;
        
